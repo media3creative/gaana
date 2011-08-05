@@ -1,0 +1,365 @@
+- @sitename
+
+
+!!! 5
+%html{html_attrs}
+  %head
+    %title= @title
+    // Buggy on the iPhone4
+    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
+    %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
+    %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
+
+  %body{:onorientationchange =>"ipadFunc();"}
+  .preloader
+    .preloader-box
+      %img{:height => "40", :src => "/images/75.gif", :width => "40"}
+  .bg2
+  .bg1
+  .left-side-bar
+  .logo
+  .menu-container
+    %ul
+      %li
+        %a{:href => "#", :id => "main-1-link"} Home
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-2-link"} About
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-3-link"} Event
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-4-link"} Game
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-5-link"} Gallery
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-6-link"} Blog
+        .menu-hl
+      %li
+        %a{:href => "#", :id => "main-7-link"} Contact
+        .menu-hl
+  .content-container#homePage
+    .content-box
+      %h1 About Gaana Pehchaana
+      .line
+      %h2 Mission Statement
+      .half-box
+        %p Pehchaana is a not-for-profit organization dedicated to promotion and appreciation of Hindi Film Music from India. It is a new way to enjoy Hindi Film Music - a unique and fun way of promoting Hindi Film Music through a game show format and live performances. 
+        %p The songs from Hindi films range in age from the 1930's to the 2010's are truly an Indian national treasure! The music from the films have consistently set a higher standard of excellence and entertainment than the films themselves, and often outlast them in popularity by decades. Yet, the people behind these songs – composers, singers, lyricists and instrumentalists – don’t get anywhere near the recognition that the stars acting in the films do.
+      .half-box
+        %p Gaana Pehchaana is a small effort to pay tribute to all these artists and their creations which have enriched the lives of millions of people over many decades. It tries to do that through creative game show formats involving the songs, highlighting some of the creative gems in music and lyrics, sharing interesting facts about the process of creating these masterpieces, and of course, live performances.
+        %p While a long way from actually raising any funds, any such 'profits' from the efforts of Gaana Pehchaana will be entirely donated to causes benefiting the artists who created Hindi Film Music over the ages, and to efforts to foster the continued appreciation of these national treasures.
+      .full-box
+        %h2 Connect with us
+        %br
+        .social-icon
+          %a{:href => "http://www.facebook.com/felix55houston", :target => "_blank"}
+            %img{:height => "40", :src => "/images/facebook_logo.png", :width => "40", :border => "0", :class => "icon"}
+          %a{:href => "http://twitter.com/Felix55houston", :target => "_blank"}
+            %img{:height => "40", :src => "/images/twitter_logo.png", :width => "40", :border => "0", :class => "icon"}
+  .content-container#venuePage
+    .content-box
+      %h1 Live Events
+      .line
+      %h2 Upcoming Events
+      .half-box
+        %p Pehchaana is a not-for-profit organization dedicated to promotion and appreciation of Hindi Film Music from India. It is a new way to enjoy Hindi Film Music - a unique and fun way of promoting Hindi Film Music through a game show format and live performances. 
+        %p The songs from Hindi films range in age from the 1930's to the 2010's are truly an Indian national treasure!
+      .half-box
+        %span{:style => "text-align:center;"}
+          %img{:height => "142", :src => "/images/sample_event_pic.jpg", :width => "132"}
+          .violent-button
+            Purchase Ticket
+      .full-box
+        %h2 Past Events
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+        %a
+          %img{:height => "100", :src => "/images/placeholder-01.jpg", :width => "100"}
+  .content-container#galleryPage
+    %h1 Gallery
+    %h2 Our Staff
+    .gallery-container
+      %a.lightbox{:href => "/images/pics/gallery_01_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_01_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_02_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_02_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_03_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_03_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_04_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_04_small.jpg", :width => "100"}
+    %br
+    %br
+    %h2 Our Place
+    .gallery-container
+      %a.lightbox{:href => "/images/pics/gallery_05_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_05_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_06_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_06_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_07_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_07_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_08_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_08_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_09_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_09_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_10_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_10_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_11_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_11_small.jpg", :width => "100"}
+      %a.lightbox{:href => "/images/pics/gallery_09_big.jpg"}
+        %img{:height => "100", :src => "/images/pics/gallery_09_small.jpg", :width => "100"}
+  .content-container#calendarPage
+    %h1 Event Calendar
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr.event-container
+        %td{:width => "120"} 
+          %img{:height => "100", :src => "/images/pics/event_01_small.jpg", :width => "100"}
+        %td{:width => "auto"}
+          %h2 Mixing Monday
+          %p Every Monday 9PM. Sample cocktails and choose 2 of your favorites. $20 per person to be part of the mix
+    %br
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr.event-container
+        %td{:width => "120"} 
+          %img{:height => "100", :src => "/images/pics/event_02_small.jpg", :width => "100"}
+        %td{:width => "auto"}
+          %h2 Pink Jams
+          %p Felix 55 is a proud sponsor of Pink Jams! Now through October $1 from every \"Rock the Pink\" specialty cocktail will be donated to Pink Jams! for breast cancer awareness.
+    %br
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr.event-container
+        %td{:width => "120"} 
+          %img{:height => "100", :src => "/images/pics/event_03_small.jpg", :width => "100"}
+        %td{:width => "auto"}
+          %h2 Martini Weekend
+          %p Saturday Happy Hour - 2pm-5pm (Bar Menu available) Sunday Brunch - coming soon.
+    %br
+  .content-container#reservationPage
+    %h1 Reservation
+    %p Let Felix 55's experienced professional staff augment your own team by taking care of logistics such as hotel accommodations and car service or lending a hand in vendor negotiations. From concept development to the smallest details Felix 55's full-service Event Team will help to make your next special event an unrivaled experience
+    %iframe{:allowtransparency => "true", :frameborder => "0", :height => "640", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/r7p2k9/", :style => "width:100%;border:none"}
+      %a{:href => "http://media3creative.wufoo.com/forms/r7p2k9/", :title => "Felix 55 Booking"} Fill out my Wufoo form!
+  .content-container#happyHourPage
+    %h1 Happy Hour
+    %h2 Every day
+    %p 4pm to 7pm
+    %p Every listed item for $6
+    %ul.normal-list
+      %li Truffle Fries with Parmesan Cheese, Parsley
+      %li Pulled Pork Tacos with Cotija Cheese, Red Cabbage, Avocado Crema
+      %li Ceviche with Leche de Tigre, Cilantro, Lime, Tortilla Chips
+      %li TBBQ Beef Sliders with Jack Cheese, House Made Pickles, Slaw
+      %li Ricotta-Corn Fritters with Cumin Dusted, Lemon-Curry Aioli
+      %li Pesto Chicken Flatbread with Sun dried Tomato, Black Olives, Arugula
+
+  %br
+  .content-container#menuPage-1
+    %h1 Lunch
+    %h2 Bite to share
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr
+        %td{:width => "460"} 
+          %p Ceviche, Leche de Tigre, Cilantro, Lime, Tortilla Chips
+        %td{:width => "40"}
+          %p $9
+      %tr
+        %td
+          %p Artesian Cheese Board, Marcona Almonds, Grapes, Toasted Baguette
+        %td
+          %p $16
+      %tr
+        %td
+          %p Crimini Mushroom Risotto, Tomato, Chives, Parmesan Cheese
+        %td
+          %p $8
+      %tr
+        %td
+          %p Truffle Fries, Parmesan Cheese, Parsley
+        %td
+          %p $7
+    %br
+    %br 
+  .content-container#menuPage-2
+    %h1 Diner
+    %h2 Small Plates
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr
+        %td{:width => "460"} 
+          %p Summer Corn Soup, Charred Corn, Piquillo Peppers, Goat’s Cheese
+        %td{:width => "40"}
+          %p $6
+      %tr
+        %td
+          %p Summer Salad, Roast Corn, Teardrop Tomatoes, Goat Cheese, Pecans, Champagne Vinaigrette
+        %td
+          %p $11
+      %tr
+        %td
+          %p Baby Arugula Salad, Fuji Apple, Pine Nuts, Parmesan, White Balsamic Vinaigrette
+        %td
+          %p $9
+      %tr
+        %td
+          %p Artisan Cheese Board, Marcona Almonds, Grapes, Toasted Baguette
+        %td
+          %p $16
+      %tr
+        %td
+          %p Tatare of Big Eye Tuna, Scallion, Soya, Sesame, Wasabi Cream
+        %td
+          %p $12
+  .content-container#menuPage-3
+    %h1 Martini & Cocktails
+    %h2 Handcrafted Martini
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr
+        %td{:width => "460"} 
+          %p Pascual Toso Brut Sparkling Spain
+        %td{:width => "40"}
+          %p $33
+      %tr
+        %td
+          %p 1+1=3 Cava Brut NV Italy 
+        %td
+          %p $40
+      %tr
+        %td
+          %p Moet & Chandon Nectar Imperial Rose France
+        %td
+          %p $35
+      %tr
+        %td
+          %p Veuve Clicquot NV France
+        %td
+          %p $120
+      %tr
+        %td
+          %p Philipponnat Royale Reserve ‘08 France
+        %td
+          %p $90
+    %br
+  .content-container#menuPage-4
+    %h1 Wine List
+    %h2 Sparkling by the Glass
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr
+        %td{:width => "460"} 
+          %p Rotari, Prosecco, Trento, DOC 
+        %td{:width => "40"}
+          %p $10
+      %tr
+        %td
+          %p Elio Perone Moscato d Asti  
+        %td
+          %p $14
+      %tr
+        %td
+          %p Collin Brut NV Cuvee Prestige 
+        %td
+          %p $15
+      %tr
+        %td
+          %p Rotari Prosecco, Rose, Trento, DOC 	
+        %td
+          %p $10
+    %br
+    %br   
+  .content-container#menuPage-5
+    %h1 Brunch
+    %h2 To Start
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "500"}
+      %tr
+        %td{:width => "460"} 
+          %p Jumbo Crab Cake, Charred Corn Salsa, Spicy Greens, Avocado Crema 
+        %td{:width => "40"}
+          %p $12
+      %tr
+        %td
+          %p Organic Greek Yogurt, Fresh Berries or Bananas, Felix Granola 
+        %td
+          %p $8
+      %tr
+        %td
+          %p Ceviche, Leche de Tigre, Cilantro, Lime, Tortilla Chips
+        %td
+          %p $9
+      %tr
+        %td
+          %p Guacamole and Tortilla Chips
+        %td
+          %p $8
+      %tr
+        %td
+          %p Shrimp and Grits, Bacon, Peppers, Onions, Cajun Butter Sauce 
+        %td
+          %p $12
+      %tr
+        %td
+          %p Ricotta-Apple Fritters, Cinnamon, 10X Sugar, Agave Syrup 
+        %td
+          %p $7
+      %tr
+        %td
+          %p Summer Salad, Roast Corn, Teardrop Tomatoes, Goat Cheese, Pecans, Champagne Vinaigrette 
+        %td
+          %p $9
+  .content-container#contactPage
+    %h1 Contact
+    %p We welcome all feedback good and bad, and any questions from enquiring minds. If you've experienced a problem with your visit please give us as many details as possible and be sure to include the date and time. We do our best to correct mistakes and this information helps us to isolate specific problems and minimize their recurrence.
+    %h2 Address
+    %p 5510 Morningside Dr, #120 Houston, TX 77005
+    %br
+    %div{:style => "border:#606522 solid 1px;"}
+      %iframe{:frameborder => "0", :height => "360", :marginheight => "500", :marginwidth => "550", :scrolling => "no", :src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=5510+MORNINGSIDE+SUITE+120+Houston,+TX+77005&aq=&ie=UTF8&hq=&hnear=5510+Morningside+Dr,+Houston,+Texas+77005&ll=29.785085,-95.50523&spn=0.104361,0.145912&z=12&iwloc=A&output=embed", :width => "500"}
+    %br
+    %h2 General Inquiries
+    %p (713)555 5555
+    %h2 Director of Special Events & Marketing
+    %p
+      %b Shein Armaan
+    %p 
+      %i shein@felix55.com
+    %p 832.860.0068
+    
+    %iframe{:allowtransparency => "true", :frameborder => "0", :height => "420", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p5x7/", :style => "width:100%;border:none"}
+      %a{:href => "http://media3creative.wufoo.com/forms/q7p5x7/", :title => "Felix 55"} Contact us
+  .footer
+    %p 5510 MORNINGSIDE SUITE 120 | HOUSTON, TEXAS 7705 | 1-800-2934 | ram@gaana.com
+  .ipad-control
+  .photo-preload
+    %img{:height => "40", :src => "/images/bg_1.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_1_2.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_1_4.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_1_5.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_1_3.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_4.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/wine_bottles.jpg", :width => "40"}  
+    %img{:height => "40", :src => "/images/cocktails.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/reservation.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_5.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/happy_hour.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_6.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/contact.jpg", :width => "40"}
+    %img{:height => "40", :src => "/images/bg_3.jpg", :width => "40"}              
+    %img{:height => "40", :src => "/images/bg_2.jpg", :width => "40"}

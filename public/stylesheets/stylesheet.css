@@ -1,0 +1,321 @@
+@font-face {
+  font-family: TrajanPro-Regular;
+  src: url(/fonts/TrajanPro-Regular.otf) format("opentype");
+}
+
+.preloader {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.preloader-box {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-top: 25%;
+  height: 200px;
+  width: 200px;
+}
+
+.bg1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: url(/images/bg_1.jpg) no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: url(/images/bg_1.jpg) no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  background-image: url(/images/logo.png);
+  top: 20px;
+  left: 80px;
+  position: fixed;
+  height: 208px;
+  width: 240px;
+  z-index: 20;
+}
+
+.menu-container {
+  z-index: 10;
+  position: fixed;
+  top: 125px;
+  left: 0px;
+  height: 580px;
+  width: 121px;
+  background-image: url(/images/menu_bg.jpg);
+  font-family: "TrajanPro-Regular";
+  font-weight: 20;
+  color: #fbf8f8;
+  text-align: center;
+}
+
+.menu-container ul {
+  margin-top: 100px;
+  position: absolute;
+  list-style-type: none;
+  letter-spacing: 0.15em;
+  line-height: 60px;
+}
+
+.menu-container li {
+  margin-top: 5px;
+  line-height: 60px;
+}
+
+.menu-container ul a {
+  opacity: 0;
+  font-size: 12px;
+  color: inherit;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.menu-hl {
+  position: absolute;
+  left: 20px;
+  margin-top: -75px;
+  background-color: #4b166c;
+  height: 50px;
+  width: 0px;
+}
+
+.red-line {
+  display: inline;
+  position: relative;
+  float: left;
+  height: 2px;
+  width: 7px;
+  margin-top: 7px;
+  margin-right: 5px;
+  background-color: #931616;
+}
+
+.sub-menu-box {
+  float: left;
+}
+
+.sub-menu {
+  display: none;
+  list-style-type: none;
+  position: relative;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.footer {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  text-align: left;
+  color: black;
+  font-size: 13px;
+  background: url(/images/content_bg.png);
+  background-repeat: repeat-y;
+  padding-left: 25px;
+  display: inline;
+}
+
+.phone-num {
+  color: black;
+  font-size: 14px;
+}
+
+.line {
+  width: 600px;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.violent-button {
+  width: 132px;
+  height: 25px;
+  background-color: #4b166c;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.violent-button:hover {
+  width: 132px;
+  height: 30px;
+  background-color: #cccccc;
+  color: black;
+}
+
+#main-1-link, #main-2-link, #main-3-link, #main-4-link, #main-5-link, #main-6-link, #main-7-link, #main-8-link {
+  display: block;
+  height: 50px;
+  width: 120px;
+  margin-left: -37px;
+  background: rgba(255, 255, 255, 0);
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "TrajanPro-Regular";
+  font-size: 30px;
+  color: black;
+  margin-left: 140px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  opacity: 1;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "TrajanPro-Regular";
+  font-size: 16px;
+  color: #4b166c;
+  margin: 0px;
+  opacity: 1;
+}
+
+p {
+  color: black;
+  opacity: 1;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+  font-family: "Garamond";
+}
+
+img {
+  border: 2px solid white;
+}
+
+td {
+  padding-left: 20px;
+}
+
+.social-icon {
+  display: inline;
+  left: 40px;
+}
+
+.photo-preload {
+  position: fixed;
+  top: 0px;
+  left: -2000px;
+  height: 1px;
+  width: 1px;
+}
+
+.content-container {
+  z-index: 9;
+  position: absolute;
+  top: 125px;
+  left: -1400px;
+  height: 580px;
+  width: 100%;
+  font-size: 12px;
+  background: url(/images/content_bg.png);
+  background-repeat: repeat-y;
+}
+.content-container .content-box {
+  width: 600px;
+  margin-left: 140px;
+  margin-top: 40px;
+}
+.content-container .content-box .full-box {
+  width: 600px;
+  float: left;
+}
+.content-container .content-box .half-box {
+  position: relative;
+  float: left;
+  width: 280px;
+  margin-left: 10px;
+}
+
+.close-content {
+  height: 25px;
+  background-color: #931616;
+  float: right;
+  color: white;
+  font-family: "TrajanPro-Regular";
+  font-size: 15px;
+  width: 75px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.close-content:hover {
+  background-color: white;
+  color: #931616;
+}
+
+.gallery-container {
+  text-align: center;
+  width: 500px;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black url(images/spinner.gif) no-repeat scroll center center;
+  z-index: 200;
+}
+
+.icon {
+  border: 0 solid white;
+}
+
+#lightbox {
+  position: absolute;
+  z-index: 500;
+  border: 4px solid white;
+}
+
+.normal-list {
+  color: #cccccc;
+  font-family: "TrajanPro-Regular";
+  line-height: 25px;
+}
+
+.content-text {
+  background: rgba(255, 255, 255, 0.6);
+  height: auto;
+  -moz-border-radius: 5px 25px 5px 25px;
+  border-radius: 5px 25px 5px 25px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
