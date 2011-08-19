@@ -1,6 +1,9 @@
 @font-face
-	font-family: TrajanPro-Regular
-	src: url(/fonts/TrajanPro-Regular.otf) format("opentype")
+	font-family: helve
+	src: url(/fonts/helvetica_light.ttf) format("truetype")
+@font-face
+	font-family: arabian
+	src: url(/fonts/arabian.ttf) format("truetype")
 .ipad-control
 	//position: relative
 	//min-height: 800px
@@ -36,7 +39,7 @@
 	//max-height: 1000px
 	height: 100%
 	background-color: #000000
-	background: url(/images/bg_1.jpg) no-repeat top center scroll
+	background: url(/images/bg_3.jpg) no-repeat top left scroll
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -49,7 +52,29 @@
 	//max-height: 1000px
 	height: 100%
 	background-color: #000000
-	background: url(/images/bg_1.jpg) no-repeat top center scroll
+	background: url(/images/bg_3.jpg) no-repeat top left scroll
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+.top-banner
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 250px
+	background: url(/images/top-banner.png) no-repeat top left scroll
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+.bottom-banner
+	position: fixed
+	bottom: 0px
+	left: 0px
+	width: 100%
+	height: 250px
+	background: url(/images/bottom-banner.png) no-repeat top left scroll
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -57,48 +82,57 @@
 .logo
 	background-image: url(/images/logo.png)
 	top: 20px
-	left: 80px
-	position: fixed
-	height: 208px
-	width: 240px
+	left: 20px
+	position: absolute
+	height: 629px
+	width: 288px
 	z-index: 20
 .menu-container
 	z-index: 10
-	position: fixed
-	top: 125px
-	left: 0px
-	height: 580px
-	width: 121px
-	background-image: url(/images/menu_bg.jpg)
-	font-family: "TrajanPro-Regular"
+	position: absolute
+	top: 140px
+	left: 310px
+	height: 97px
+	width: 500px
+	background-image: url(/images/menu_bg.png)
+	//background-color: #000000
+	font-family: arabian
 	font-weight: 20
 	color: #fbf8f8
 	text-align: center
 .menu-container ul
-	margin-top: 100px
+	display: inline-block
+	margin-top: 25px
+	margin-left: 0px
 	position: absolute
 	list-style-type: none
-	letter-spacing: 0.15em
-	line-height: 60px
+	//letter-spacing: 0.075em
 .menu-container li
+	display: inline-block
 	margin-top: 5px
-	line-height: 60px
+	//line-height: 60px
 	//position: absolute
 	//margin-left: 50px
 .menu-container ul a
-	opacity: 0
+	//opacity: 0
 	//visibility: hidden
-	font-size: 12px
+	font-size: 16px
 	color: inherit
 	text-decoration: none
-	line-height: 20px
+	//line-height: 20px
 .menu-hl
+	z-index: -1
+	display: none
 	position: absolute
-	left: 20px
-	margin-top: -75px
-	background-color: #4B166C
-	height: 50px
-	width: 0px
+	padding-top: 10px
+	margin-left: -20px
+	margin-top: -8px
+	background: rgba(255, 255, 255, 0.7)
+	border-top-right-radius: 25px 25px
+	border-top-left-radius: 25px 25px
+	border: 1px solid #D1D3D4
+	height: 0px
+	width: 75px
 .red-line
 	display: inline
 	position: relative
@@ -156,24 +190,25 @@ html
 
 #main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link
 	display: block
-	height: 50px
-	width: 120px
-	margin-left: -37px
-	background: rgba(255, 255, 255, 0)
+	padding-top: 10px
+	height: 20px
+	width: 90px
+	margin-left: -25px
+	//background: rgba(255, 255, 255, 1)
 	//background-color: #696969
 body
 	background-color: #000000
 h1
-	font-family: "TrajanPro-Regular"
+	font-family: arabian
 	font-size: 30px
 	color: black
 	margin-left: 140px
-	margin-top: 60px
+	margin-top: 10px
 	margin-bottom: 0px
 	opacity: 1
 	font-weight: 100
 h2
-	font-family: "TrajanPro-Regular"
+	font-family: helve
 	font-size: 16px
 	color: #4B166C
 	margin: 0px
@@ -182,14 +217,14 @@ p
 	color: black
 	opacity: 1
 	//margin: 20px
-	font-size: 13px
+	font-size: 12px
 	margin-left: 10px
 	margin-top: 5px
 	//font-size: 12px
-	letter-spacing: 0.1em
-	font-family: "Garamond"
+	letter-spacing: 0.075em
+	font-family: helve
 img
-	border: 2px solid white
+	//border: 2px solid white
 td
 	padding-left: 20px
 .social-icon
@@ -205,21 +240,23 @@ td
 .content-container
 	z-index: 9
 	position: absolute
-	top: 125px
+	top: 200px
 	left: -1400px
-	height: 580px
-	width: 100%
+	padding-bottom: 25px
+	height: auto
+	width: 700px
 	font-size: 12px
-	//border-style: solid
-	//border-width: 0.7px
-	//border-color: #383733
-	background: url(/images/content_bg.png)
-	background-repeat: repeat-y
-	//background: rgba(255, 255, 255, 0.7)
+	border-style: solid
+	border-width: 0.7px
+	border-color: #383733
+	border-radius: 25px
+	//background: url(/images/content_bg.png)
+	//background-repeat: repeat-y
+	background: rgba(255, 255, 255, 0.7)
 	.content-box
 		width: 600px
-		margin-left: 140px
-		margin-top: 40px
+		margin-left: 50px
+		margin-top: 10px
 		.full-box
 			width: 600px
 			float: left
@@ -234,7 +271,7 @@ td
 	background-color: #931616
 	float: right
 	color: white
-	font-family: "TrajanPro-Regular"
+	font-family: arabian
 	font-size: 15px
 	width: 75px
 	text-align: center
@@ -246,23 +283,11 @@ td
 .gallery-container
 	text-align: center
 	width: 500px
-#overlay
-	position: absolute
-	top: 0
-	left: 0
-	height: 100%
-	width: 100%
-	background: black url(images/spinner.gif) no-repeat scroll center center
-	z-index: 200
 .icon
 	border: 0 solid white
-#lightbox
-	position: absolute
-	z-index: 500
-	border: 4px solid #FFFFFF
 .normal-list
 	color: #CCCCCC
-	font-family: "TrajanPro-Regular"
+	font-family: arabian
 	line-height: 25px
 .content-text 
 	background: rgba(255, 255, 255, 0.6)

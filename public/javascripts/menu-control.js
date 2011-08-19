@@ -38,53 +38,10 @@ function menu_appear(menu_item,delay_count,offset){
 	);
 }
 $(document).ready(function() {
+	changePage("#homePage","bg_1.jpg");
 	$('.content-container').css("display","none")
-		$('#homePage').css("display","block")
-	//=====LIGHT BOX
-	function positionLightboxImage() {
-	  var top = ($(window).height() - $('#lightbox').height()) / 2;
-	  var left = ($(window).width() - $('#lightbox').width()) / 2;
-	  $('#lightbox')
-	    .css({
-	      'top': top + $(document).scrollTop(),
-	      'left': left
-	    })
-	    .fadeIn();
-	}
-
-	function removeLightbox() {
-	  $('#overlay, #lightbox').fadeOut('slow', function() {
-	      $(this).remove();
-	      $('body').css('overflow-y', 'auto'); // show scrollbars!
-	    });
-	}
-	$('a.lightbox').click(function(e) {
-		$('embed').remove();
-    //$('body').css('overflow-y', 'hidden'); // hide scrollbars!
-
-    $('<div id="overlay"></div>')
-      .css('top', $(document).scrollTop())
-      .css('opacity', '0')
-      .animate({'opacity': '0.7'}, 'slow').click(function() {
-        removeLightbox();
-      })
-      .appendTo('body');
-
-    $('<div id="lightbox"></div>')
-      .hide()
-      .appendTo('body');
-
-    $('<img />')
-      .attr('src', $(this).attr('href')).css("border","0px")
-      .load(function() {
-        positionLightboxImage();
-      }).click(function() {
-	        removeLightbox();
-	      }).appendTo('#lightbox');
-
-    return false;;
-	});
-	//=======END LIGHT BOX
+	$('#homePage').css("display","block")
+	
 	//changePage("#page1")
 	$(".preloader").delay(600).slideToggle(600,"swing");
 	$(".bg2").css("display", "none");
@@ -94,14 +51,14 @@ $(document).ready(function() {
 	if(is_safari){
 	}
 	//=====menu-animation=====================
-	menu_appear("#main-1-link",1250);
-	menu_appear("#main-8-link",1500);
-	menu_appear("#main-2-link",1750);
-	menu_appear("#main-7-link",2000);
-	menu_appear("#main-3-link",2250);
-	menu_appear("#main-6-link",2500);
-	menu_appear("#main-4-link",2750);
-	menu_appear("#main-5-link",3000);
+	//menu_appear("#main-1-link",1250);
+	//menu_appear("#main-8-link",1500);
+	//menu_appear("#main-2-link",1750);
+	//menu_appear("#main-7-link",2000);
+	//menu_appear("#main-3-link",2250);
+	//menu_appear("#main-6-link",2500);
+	//menu_appear("#main-4-link",2750);
+	//menu_appear("#main-5-link",3000);
 	//==============
 	$('.close-content').click(function(){
 		$(this).parent().slideToggle("slow");
@@ -114,7 +71,7 @@ $(document).ready(function() {
 		if($('#homePage').css("display") == "none"){
 				$('#homePage').slideToggle("fast");
 		}
-		changePage("#homePage","bg_1.jpg");
+		changePage("#homePage","bg_3.jpg");
 		//switchBg("bg1.jpg");
 		// pageComeOut();
 	});
@@ -131,10 +88,10 @@ $(document).ready(function() {
 	$('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link').hover(
 	  function () {
 
-			$(this).css("color","#931616");
-			$(this).animate(
+			$(this).css("color","black");
+			$(this).next().css("display","block").animate(
 				//alert($(this).width())
-				{"margin-left":"-37px","letter-spacing":"0.50em","backgroundColor": "rgba(255, 255, 255, 1)"},
+				{"height":"70px","margin-top":"-80px"},
 				{duration: 200
 				,ease: "swing"
 				,queue: false}
@@ -143,13 +100,13 @@ $(document).ready(function() {
 		,
 		 function () {
 
-			$(this).animate(
+			$(this).next().animate(
 				//alert($(this).width())
-				{"margin-left":"-37px","letter-spacing":"0.15em","backgroundColor": "rgba(255, 255, 255, 0)"},
+				{"height":"0px","margin-top":"-8px"},
 				{duration: 200
 				,ease: "swing"
 				,queue: false}
-			);
+			).css("display","none");
 			$(this).css("color","#FFFFFF");
 		  }
 	);
@@ -215,7 +172,7 @@ $(window).resize(function() {
 
 function changePage(targetPage,targetBg){
 	//var inPoint = (parseInt($("body").css("width"))/2) - (parseInt($(targetPage).css("width"))/2) - 100 + "px"
-	var inPoint = "0px"
+	var inPoint = "100px"
 	var outPoint2 =  (0 - parseInt($(targetPage).css("width"))) + "px"
 	var outPoint =  (parseInt($("body").css("width")) + parseInt($(targetPage).css("width"))) + "px"
 	//alert(inPoint);
