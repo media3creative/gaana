@@ -105,8 +105,13 @@ $(document).ready(function() {
 				{"height":"0px","margin-top":"-8px"},
 				{duration: 200
 				,ease: "swing"
-				,queue: false}
-			).css("display","none");
+				,queue: false
+				,complete: function() {
+				      $(this).css("display","none")
+			 			}
+				}
+			)
+			//$(this).next().delay(200).css("display","none");
 			$(this).css("color","#FFFFFF");
 		  }
 	);
