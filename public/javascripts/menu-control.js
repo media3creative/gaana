@@ -43,7 +43,7 @@ $(document).ready(function() {
 	$('#homePage').css("display","block")
 	
 	//changePage("#page1")
-	$(".preloader").delay(600).slideToggle(600,"swing");
+	//$(".preloader").delay(600).slideToggle(600,"swing");
 	$(".bg2").css("display", "none");
 	$("body").css("overflow-x", "hidden");
 	//=======ANIMATION FOR MAIN MENU===========
