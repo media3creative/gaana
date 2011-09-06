@@ -5,17 +5,17 @@
 %html{html_attrs}
   %head
     %title= @title
-    // Buggy on the iPhone4
-    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
     %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
     %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
+    
+    %script{:src => "javascripts/prototype.js", :type => "text/javascript"}
+    %script{:src => "javascripts/scriptaculous.js?load=effects,builder", :type => "text/javascript"}
+    %script{:src => "javascripts/lightbox.js", :type => "text/javascript"}
+    %link{:href => "stylesheets/lightbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
 
   %body{:onorientationchange =>"ipadFunc();"}
-  //.preloader
-  //  .preloader-box
-  //    %img{:height => "40", :src => "/images/75.gif", :width => "40"}
   .bg2
   .bg1
   .logo
@@ -143,7 +143,35 @@
     .content-box
       %h1 GALLERY
       .line
-      .full-box
+      .full-box{:style => "margin-left: 150px; width: 460px;"}
+        %a{:href => "/images/pics/1.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/1_small.jpg", :width => "60"} 
+        %a{:href => "/images/pics/2.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/2_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/3.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/3_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/4.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/4_small.jpg", :width => "60"} 
+        %a{:href => "/images/pics/5.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/5_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/6.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/6_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/7.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/7_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/8.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/8_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/9.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/9_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/10.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/10_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/11.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/11_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/12.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/12_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/13.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/13_small.jpg", :width => "60"}
+        %a{:href => "/images/pics/14.jpg", :rel => "lightbox[gallery]"}
+          %img{:height => "160", :src => "/images/pics/14_small.jpg", :width => "60"}
   .content-container#blogPage
     .content-box
       %h1 BLOGS
