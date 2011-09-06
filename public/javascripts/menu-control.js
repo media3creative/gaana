@@ -65,23 +65,25 @@ $(document).ready(function() {
 	});
 	//alert($('#main-1-link').next());
 	$('#main-1-link').click(function(){
-		if($('#sub-menu-6').css("display") != "none"){
-				$('#sub-menu-6').slideToggle("fast");
-		}
-		if($('#homePage').css("display") == "none"){
-				$('#homePage').slideToggle("fast");
-		}
 		changePage("#homePage","bg_3.jpg");
-		//switchBg("bg1.jpg");
-		// pageComeOut();
 	});
 	$('#main-2-link').click(function(){
-			if($('#sub-menu-6').css("display") != "none"){
-					$('#sub-menu-6').slideToggle("fast");
-			}
-		changePage("#venuePage","bg_2.jpg");
-		//switchBg("bg7.jpg");
-		// pageComeOut();
+		changePage("#eventPage","bg_2.jpg");
+	});
+	$('#main-3-link').click(function(){
+		changePage("#gamePage","bg_2.jpg");
+	});
+	$('#main-4-link').click(function(){
+		changePage("#galleryPage","bg_2.jpg");
+	});
+	$('#main-5-link').click(function(){
+		changePage("#blogPage","bg_2.jpg");
+	});
+	$('#main-6-link').click(function(){
+		changePage("#contactPage","bg_2.jpg");
+	});
+	$('#main-7-link').click(function(){
+		changePage("#donationPage","bg_2.jpg");
 	});
 		// pageComeOut();
 	//=====MOUSE ENTER MENU ITEM==============
@@ -148,23 +150,21 @@ function ipadFunc(){
 		//window.location.reload(true);
 		//alert(parseInt($("window").css("height")))
 		//alert(window.orientation)
-		if( parseInt($(".content-container").css("height")) > 600
-		&& (window.orientation == 90 ||  window.orientation == -90)
-		){
-			$(".bg1").css(
-				{"height": parseInt($(".content-container").css("height"))+ 150 +"px"}
+		//if( parseInt($(".content-container").css("height")) > 600
+		//&& (window.orientation == 90 ||  window.orientation == -90)
+		//){
+			//alert(parseInt($(".content-container").css("height"))+ 150 +"px");
+			$(".bg1, .bg2").css(
+				{"height": parseInt($(".content-container").css("height"))+ 600 +"px"}
 				);
-			$(".bg2").css(
-				{"height": parseInt($(".content-container").css("height"))+ 150 +"px"}
-				);
-		}else{
-				$(".bg1").css(
-					{"height": "100%"}
-					);
-				$(".bg2").css(
-					{"height": "100%"}
-					);
-		}
+		//}else{
+		//		$(".bg1").css(
+		//			{"height": "100%"}
+		//			);
+		//		$(".bg2").css(
+		//			{"height": "100%"}
+		//			);
+		//}
 	};
 }
 $(window).resize(function() {
