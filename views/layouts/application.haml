@@ -29,14 +29,14 @@
         .menu-hl
           //%img{:height => "38", :src => "/images/note.png", :width => "16"}
       %li
-        %a{:href => "#", :id => "main-2-link"} Event
+        %a{:href => "#", :id => "main-2-link"} Games
         .menu-hl
           //%img{:height => "38", :src => "/images/note.png", :width => "16"}
       %li
-        %a{:href => "#", :id => "main-7-link"} Donation
+        %a{:href => "#", :id => "main-7-link"} Tickets
         .menu-hl
       %li
-        %a{:href => "#", :id => "main-3-link"} Game
+        %a{:href => "#", :id => "main-3-link"} Play
         .menu-hl
           //%img{:height => "38", :src => "/images/note.png", :width => "16"}
       %li
@@ -56,7 +56,7 @@
       %h1 ABOUT GAANA PEHCHAANA
       .line
       .full-box
-        %h2 Missions
+        %h2 Mission
         %p Gaana Pehchaana - A New Way to Enjoy Hindi Film Music is a not-for-profit organization dedicated to promotion and appreciation of Hindi Film Music from India.  It is a unique and fun way of promoting Hindi Film Music through a game show format, live performances, on-line games, blogs and discussion forums.
         %h2 Hindi Film Music - A National Treasure
         %p Hindi films have delighted audiences and listeners with their music from as far back as the 1930's all the way to the 2010's and are truly a national treasure! The music from the films has consistently set a higher standard of excellence and entertainment than the films themselves, and often outlasts them in popularity by decades. Yet, the people behind these songs - composers, singers, lyricists and instrumentalists - don't get anywhere near the recognition that the stars acting in the films do.  Gaana Pehchaana is a small effort to pay tribute to all these artists and their creations which have enriched the lives of millions of people over many decades.
@@ -86,25 +86,21 @@
       .half-box
         %br
         %br
-        %br
-        %br
-        %img{:height => "140", :src => "/images/game1.jpg", :width => "280"} 
-        %br
-        %br
+        %a{:href => "/images/game1_big.png", :rel => "lightbox"}
+          %img{:height => "220", :src => "/images/game1.jpg", :width => "280"} 
         %br
         %br
         %br
-        %br 
+        %br
+        %br
       .half-box
         %h2 Raaga Malika
         %p The picture below shows the ''game board'' for Raaga Malika.  Music clips are organized into themes such as ''Dil Se'' (songs with Dil in the answer),  or ''Ek Musafir Ek Hasina'' (songs with Ek in the answer).  Clicking on each musical note plays a song clip from that theme. Answers are selected by the audience from a multiple choice list using a keypad given to each team.  The clips get more difficult and the points are higher as we go up the musical scale from Sa to Pa.  The faster the answer, the more the points.  Wrong answers get negative points.  The team with the most points after all songs are cleared is declared the winner.
       .half-box
         %br
         %br
-        %br
-        %br
-        %br
-        %img{:height => "140", :src => "/images/game2.jpg", :width => "280"} 
+        %a{:href => "/images/game2_big.jpg", :rel => "lightbox"}
+          %img{:height => "220", :src => "/images/game2.jpg", :width => "280"} 
         %br
         %br
         %br
@@ -112,8 +108,6 @@
         %br
         %br
         %br
-        %br
-        %br 
       .half-box
         %h2 Other games
         %p
@@ -125,9 +119,8 @@
       .half-box
         %br
         %br
-        %br
-        %br
-        %img{:height => "140", :src => "/images/game3.jpg", :width => "280"} 
+        %a{:href => "/images/game3_big.jpg", :rel => "lightbox"}
+          %img{:height => "220", :src => "/images/game3.jpg", :width => "280"} 
         %br
         %br
         %br
@@ -184,7 +177,6 @@
         %img{:height => "256", :src => "images/blog_pic/blog1_pic1.png", :width => "135", :style => "float:right;margin: 10px"}
         %p And for those symptoms that continue to persist and require a visit to your friendly physician, there's the Dastak course of treatment.  Start by listening to Lataji sing Main Ri Mai Kase Kahoon , paying special attention to the Haaan, Mayi ri that Lata ji interjects towards the end of each antara.  And as if one gorgeous song in the movie wasn't enough, here comes Baiyan Na Daro to make sure you are fully nursed back to health.  Listen closely to the subtleties as Lataji sings the  Mohe Chodo Haye segment.  The full Dastak course of treatment of course includes Madan Mohanji singing Mayiri in his own haunting raw voice! I admit it - I have OD'd on this last drug many times.
         %p If your symptoms still persist, you have a serious case of HFM immune disorder (HFM: Hindi Film Music).  Time to roll out the serious ghazal-based drugs.  Let's start with the old time-tested Rasm-e-ulfat ko nibayen  - the quintessential Lata-Madan ghazal.  This is to be followed by the complex flavors of Hai Isi Mein Pyaar Ki Aabroo.  Mujhe gham bhi unka azeez hai, ke unhi ki dee huyi cheez hai - high quality curative ingredients provided by Raja Mehdi Ali Khan!  And no known side effects!
-        %p Still not cured? Time to put you on the slow, aching rendition of Aaj Socha To Aanso Bar Aaye. Listen as the haunting Hanste Zakhm signature tunes give way to the soul satisfying  ghazal like melodies. Then wait expectantly as Lataji's gorgeous voice starts with Har Kadam Par and the other antaras.  Don't worry about the tears - that's the sign that you are cured!  All your ailments are now replaced by a long-lasting meeti dard somewhere deep inside you!
         %img{:height => "120", :src => "images/blog_pic/blog1_pic2.png", :width => "160", :style => "float:left;margin: 10px"}
         %p Still not cured? Time to put you on the slow, aching rendition of Aaj Socha To Aanso Bar Aaye. Listen as the haunting Hanste Zakhm signature tunes give way to the soul satisfying  ghazal like melodies. Then wait expectantly as Lataji's gorgeous voice starts with Har Kadam Par and the other antaras.  Don't worry about the tears - that's the sign that you are cured!  All your ailments are now replaced by a long-lasting meeti dard somewhere deep inside you!
         %p 
@@ -198,19 +190,30 @@
       //.small-box{:style => "border-right: 1px solid black;"}
       %h2
         Phone
-        %p 713-999-9999
+        %p 832-538-2667
       %h2
         Email
-        %p ram@gaanapehchaana.com
+        %p ram@gaanap.com
       //.big-box
       .line
       %p Alternative, send us a quick message using this contact form:
       %iframe{:allowtransparency => "true", :frameborder => "0", :height => "417", :scrolling => "no", :src => "https://media3creative.wufoo.com/embed/w7w8k1/", :style => "width:100%;border:none"}
   .content-container#donationPage
     .content-box
-      %h1 DONATION FOR GAME NIGHT
+      %h1 TICKETS FOR GAME NIGHT
       .line
-      %img{:height => "400", :src => "/images/donation_pc.jpg", :width => "580"}
+      %img{:height => "400", :src => "/images/ticket_pic.jpg", :width => "580"}
+      %br
+      %br
+      %h2{:style =>"text-align: center;font-size: 36px;"} Saturday, February 18th, 2012
+      %h3{:style =>"text-align: center;"} KIRAN'S RESTAURANT
+      %p{:style =>"text-align: center; font-size: 14px;letter-spacing: 0.2em;"} 3546 Westheimer
+      %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :style=>"margin-left: 230px;"}
+        %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
+        %input{:name => "hosted_button_id", :type => "hidden", :value => "FAKCQHDV2Z9CW"}/
+        %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif", :type => "image"}/
+        %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
+
 
 
   .footer

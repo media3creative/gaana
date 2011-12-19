@@ -74,7 +74,7 @@ jQuery(document).ready(function() {
 		changePage("#gamePage","bg_3.jpg");
 	});
 	jQuery('#main-4-link').click(function(){
-		changePage("#galleryPage","bg_4.jpg");
+		changePage("#galleryPage","bg_8.jpg");
 	});
 	jQuery('#main-5-link').click(function(){
 		changePage("#blogPage","bg_5.jpg");
